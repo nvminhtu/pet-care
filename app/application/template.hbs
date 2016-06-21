@@ -6,29 +6,21 @@
     </div>
     {{#link-to 'index' class='item'}}Dashboard{{/link-to}}
     {{#link-to 'blog' class='item'}}Blog{{/link-to}}
-    <a href="#" class="ui right floated dropdown item" tabindex="0">
-      Profiles <i class="dropdown icon"></i>
-      <div class="menu" tabindex="-1">
-        <div class="item">Link Item</div>
-        <div class="item">Link Item</div>
-        <div class="divider"></div>
-        <div class="header">Header Item</div>
-        <div class="item">
-          <i class="dropdown icon"></i>
-          Sub Menu
-          <div class="menu">
-            <div class="item">Link Item</div>
-            <div class="item">Link Item</div>
-          </div>
+    {{#link-to 'pets' class="item"}}Pets{{/link-to}}
+
+    <div class="right menu">
+      {{#ui-dropdown class='pointing link item mobile hidden'}}
+        <i class='configure icon'></i>
+        Settings
+        <div class='menu'>
+          <a class='item' href={{href-to 'pets'}}><i class='user icon'></i> User Profile</a>
         </div>
-        <div class="item">Link Item</div>
-      </div>
-    </a>
+      {{/ui-dropdown}}
+    </div>
+
   </div>
 </div>
 <!-- End Header -->
-
-
 
 <div class="ui grid container">
   <div class="four wide column">

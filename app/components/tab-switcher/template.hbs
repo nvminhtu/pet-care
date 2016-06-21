@@ -1,0 +1,7 @@
+
+{{#each tabItems as |tabItem| }}
+  {{tab-item item=tabItem defaultTabItem=2 setSelectedTabItemAction="setSelectedTabItem" }}
+{{/each}}
+<div class="item-content">
+  {{selectedTabItem.content}}
+</div>

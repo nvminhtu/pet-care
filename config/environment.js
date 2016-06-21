@@ -2,8 +2,8 @@
 
 module.exports = function(environment) {
   var ENV = {
-    //podModulePrefix: 'autocomplete/pods',
-    modulePrefix: 'autocomplete',
+    //podModulePrefix: 'petcare/pods',
+    modulePrefix: 'petcare',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
