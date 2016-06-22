@@ -1,0 +1,22 @@
+<!-- View as default: grid -->
+<div id="pets-gallery" class="ui three column grid">
+  {{#each pets as |item|}}
+   <div class="column item">
+     <a {{ action 'pets' item.id}}>
+       <div class="ui segment">
+          <div class="image">
+            <a href={{href-to "pets.pet" item.id }}><img src="assets/images/{{item.image}}" height="auto" width="100%" /></a>
+          </div>
+          <div class="content">
+            <div class="header ui medium center aligned">{{item.name}}</div>
+            <p class="description center aligned">
+              {{item.comment}}
+            </p>
+          </div>
+       </div>
+     </a>
+   </div>
+  {{/each}}
+</div>
+<!-- end View as default: grid -->
+{{outlet}}

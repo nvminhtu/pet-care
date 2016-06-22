@@ -1,0 +1,35 @@
+<a {{ action 'clickGridView' }}><i class="grid layout icon"></i>Grid</a>
+<a {{ action 'clickListView' }}><i class="list layout icon"></i>List</a>
+<br>
+<br>
+<!-- View as default: grid -->
+<div id="pets-gallery" class="ui three column {{display}}">
+  {{#each pets as |item|}}
+   <div class="column item">
+     <a {{ action 'openModal' item.id}}>
+       <div class="ui segment">
+          <div class="image">
+            <img src="assets/images/{{item.image}}" height="auto" width="100%" />
+          </div>
+          <div class="content">
+            <div class="header ui medium center aligned">{{item.name}}</div>
+            <p class="description center aligned">
+              {{item.comment}}
+            </p>
+          </div>
+       </div>
+     </a>
+   </div>
+   {{#ui-modal id=item.id name="profile" class="profile"}}
+     <i class="close icon"></i>
+     <div class="image content">
+       <div class="description">
+         <div class="ui header">{{item.name}}</div>
+         <p>{{item.comment}}</p>
+       </div>
+     </div>
+   {{/ui-modal}}
+  {{/each}}
+</div>
+<!-- end View as default: grid -->
+{{outlet}}
