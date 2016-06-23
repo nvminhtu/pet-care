@@ -18,3 +18,14 @@
 
   This still isn’t displaying any content on the screen, though. This is because, the component itself doesn’t have any content to show. We can change this by adding the following line to the component’s template file
 </p>
+
+<div id="coupon" class="ui ignored info message">
+  CD2E85JKI
+</div>
+{{#copy-button
+  clipboardTarget="#coupon"
+  class="ui primary button"
+  success="success"
+  error="error"
+}} COPY
+{{/copy-button}}

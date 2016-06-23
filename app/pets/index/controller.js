@@ -4,7 +4,7 @@ export default Ember.Controller.extend({
   itemActions: ["Edit","Remove","Hide"],
   selectedAction: null,
   actions: {
-    updateSelected: function(component,id,value){
+    updateSelected: function(component,id){
       this.set('selectedAction', id);
     }
   }

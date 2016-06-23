@@ -10,11 +10,10 @@ Router.map(function() {
   this.route('blog');
   this.route('pets', function() {
     this.route('gallery');
-    //this.route('gallery', {path: '/pets/gallery'});
     this.route('list');
-    //this.route('pet');
     this.route('pet', {path: '/pet/:pet_id'});
   });
+  this.route('signup');
 });
 
 export default Router;

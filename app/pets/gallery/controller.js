@@ -6,7 +6,7 @@ export default Ember.Controller.extend({
     openModal: function(paId) {
       var selected= "#" + paId + ".ui.modal";
       //console.log(selected);
-      $(selected).modal('show');
+      Ember.$(selected).modal('show');
     },
     clickGridView: function() {
       //this.toggleProperty('viewGrid');;

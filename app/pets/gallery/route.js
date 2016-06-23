@@ -21,7 +21,7 @@ export default Ember.Route.extend({
         comment: 'The nightingale is a small species of bird thought to be formally members of the thrush family. The nightingale is often mistaken for the robin, as ',
         image: 'ember.png'
       }
-    ]
+    ];
 
     return petItems;
   },
