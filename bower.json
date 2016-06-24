@@ -10,6 +10,8 @@
     "pikaday": "^1.4.0",
     "semantic": "^2.1.8",
     "semantic-ui": "^2.1.8",
-    "bourbon": "^4.2.7"
+    "bourbon": "^4.2.7",
+    "slick-carousel": "^1.6.0",
+    "holderjs": "2.9.0"
   }
 }
